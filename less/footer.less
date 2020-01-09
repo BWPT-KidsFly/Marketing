@@ -1,0 +1,39 @@
+footer {
+  width: 100%;
+  nav {
+    width: 90%;
+    margin-left: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding-top: 3%;
+    margin-left: 0%;
+
+    @media @desktop {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    a {
+      .button();
+      width: 70%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      &:hover {
+        background-color: white;
+        color: @cornflowerblue;
+      }
+      @media @desktop {
+        width: 30%;
+      }
+    }
+  }
+  h3 {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+}
