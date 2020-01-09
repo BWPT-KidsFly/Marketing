@@ -1,15 +1,15 @@
 .button {
-  width: 85%;
-  background: #5680e9;
-  border-radius: 15px;
-  padding: 1rem 0;
-  text-align: center;
-  text-decoration: none;
-  border: 2px solid silver;
-  margin: 1rem 0;
+  background-color: #5680e9;
   color: white;
-  font-size: 1.9rem;
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  border-right: 1px solid #aaa;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 15px;
   font-family: "Alegreya", serif;
+  font-size: 1.7rem;
 }
 .picture-box div {
   background-color: #8860d0;
@@ -322,6 +322,7 @@ footer nav {
   width: 100%;
   padding-top: 3%;
   margin-left: 0%;
+  transition: max-height 0.2s ease-out;
 }
 @media (min-width:850px) {
   footer nav {
@@ -330,17 +331,18 @@ footer nav {
   }
 }
 footer nav a {
-  width: 85%;
-  background: #5680e9;
-  border-radius: 15px;
-  padding: 1rem 0;
-  text-align: center;
-  text-decoration: none;
-  border: 2px solid silver;
-  margin: 1rem 0;
+  background-color: #5680e9;
   color: white;
-  font-size: 1.9rem;
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  border-right: 1px solid #aaa;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 15px;
   font-family: "Alegreya", serif;
+  font-size: 1.7rem;
+  background-color: #3e6be6;
   width: 70%;
   display: flex;
   justify-content: space-evenly;
