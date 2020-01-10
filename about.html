@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>KidsFly</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <nav>
+		<ul>
+			<li><a class="logo" href="index.html"><img src="img/logo.png" alt=""></a></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="team.html">Meet the Team</a></li> <!-- FILL THIS LINK IN WITH THE LINK FROM DEVS -->
+			<li><a href="https://kidsfly-lambda.now.sh/login">Login</a></li> <!-- FILL THIS LINK IN WITH THE LINK FROM DEVS -->
+			<li><a href="https://kidsfly-lambda.now.sh/sign-up">Sign Up</a></li> <!-- FILL THIS LINK IN WITH THE LINK FROM DEVS -->
+		</ul>
+	</nav>
+
+
+  <div class="container home">
+
+    <section class="header">
+      <img src="img/kid-pointing.jpg" alt="">
+
+
+    <section class="content-section">
+      <div class="text-content">
+        <h2>Who are we?</h2>
+        <p>KidsFly was created out of necessity. As parents traveling with young kids, we knew that there had to be a better way to travel. We would have to haul all our our luggage, 3 or three car seats, and all of our travel documents. All the while, trying to keep all of our kids entertained. <br/>
+        Do you feel the same? We created KidsFly for parents just like us, who love to travel but wish it was easier for to travel with the kiddos. We have partnered with airlines and airports to help you travel to your destination with happy kids. <br/>
+        Our "Travel Friends" will walk with you from curbside drop-off, introduce themselves to your family, then help assure that the check-in process goes smoothly. Once at the gate, your "Travel Friend" will have an assortment of travel sized board games to play with your kids (and you, if you'd like to join in).
+        </p>
+
+         <a href="https://www.w3docs.com/" class="button">Get Started!</a>
+      </div>
+      <div class="img-content">
+        <img src="img/runway.jpg" alt="Airport Runway" class="running">
+      </div>
+    </section>
+    <section class="content-section" id="inverse-content">
+      <div class="img-content">
+          <img src="img/family-plane.jpeg" class="img-fluid rounded" alt="Lets have fun!">
+      </div>
+      <div class="text-content">
+        <h2>What happens next?</h2>
+        <p>Everyone loaths having to travel with kids (and so do the other passengers on the plane). Since we have partnered with specific airlines, your "Travel Friend" gets to travel with your family on the plane. If your kids get bored, or anxious, they will help aliviate any stress or anxiety from your travel experience. Need a break? A nap? Just let your "Travel Friend" know. Easy as that. Ready to get started? Tap the button below to start your stress free travel.</p>
+
+        <a href="https://www.w3docs.com/" class="button">Get Started!</a>
+      </div>
+
+    </section>
+
+  </div><!-- container -->
+
+  <footer class="footer">
+    <p>Copyright Lids Fly 2020</p>
+  </footer>
+
+<script>
+let mainNav = document.getElementById('js-menu');
+let navBarToggle = document.getElementById('js-navbar-toggle');
+
+navBarToggle.addEventListener('click', function () {
+mainNav.classList.toggle('active');
+});
+</script>
+
+</body>
+</html>
