@@ -181,88 +181,133 @@ button {
   display: flex;
   justify-content: space-around;
 }
-nav {
-  padding: 25px 0;
+a {
+  color: #000;
 }
-nav ul {
-  display: flex;
-  justify-content: space-around;
-  justify-content: space-between;
-  font-size: 1.8rem;
-  align-items: center;
-  /* margin auto center aligns logo */
-  /* demo style for logo */
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  width: 100%;
+  z-index: 3;
 }
-nav ul li {
-  /* required for logo positioned in center */
-  flex-basis: 80px;
-  flex: 0 1 10vw;
-  border-right: 1px solid black;
-  padding-left: 25px;
-  font-size: 1.75rem;
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
 }
-nav ul a {
-  padding: 0.5em;
+a {
+  display: block;
+  padding: 20px;
+  border-right: 1px solid #aaa;
   text-decoration: none;
+  text-align: center;
+  font-size: medium;
 }
-nav ul li:first-child,
-nav ul li:nth-child(n + 5) {
-  order: 3;
+a:hover {
+  background-color: #ddd;
 }
-nav ul li:nth-child(n + 5) {
-  text-align: right;
+.logo {
+  float: left;
+  display: block;
+  width: 50%;
+  height: 50%;
+  padding: 10px 20px;
 }
-nav ul li:first-child {
-  margin-left: auto;
-  margin-right: auto;
-  flex-basis: auto;
-  border-right: none;
+.menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
 }
-nav ul li:first-child {
+.menu-icon {
+  padding: 20px 28px;
   position: relative;
-  z-index: 2;
+  float: right;
+  cursor: pointer;
 }
-@media (min-width: 801px) {
-  nav .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 0;
-    height: 70px;
-    align-items: center;
+.nav-icon {
+  background: #333;
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  transition: background 0.2s ease-out;
+}
+.nav-icon:before {
+  background: #333;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  top: 5px;
+}
+.nav-icon:after {
+  background: #333;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  top: -5px;
+}
+.menu-btn {
+  display: none;
+}
+.menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+.menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+.menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+.menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+@media (min-width: 48em) {
+  .logo {
+    width: 25%;
+    background-color: #fff;
   }
-  nav .main-nav {
-    display: flex;
-    margin-right: 30px;
-    flex-direction: row;
-    justify-content: flex-end;
+  li {
+    float: left;
   }
-  nav .main-nav li {
-    margin: 0;
+  a {
+    padding: 20px 30px;
   }
-  nav .nav-links {
-    margin-left: 40px;
+  .menu {
+    clear: none;
+    float: right;
+    max-height: none;
   }
-  nav .logo {
-    margin-top: 0;
-  }
-  nav .navbar-toggle {
+  .menu-icon {
     display: none;
   }
-  nav .logo:hover,
-  nav .nav-links:hover {
-    color: #ffffff;
-  }
 }
-.footer {
+footer {
   width: 100%;
   border-top: 2px dashed silver;
   background-image: linear-gradient(to right, #8860d0, #c1c8e4);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.footer p {
+footer p {
   text-align: center;
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+footer h3 {
+  text-align: center;
+  color: black;
 }
 .home .header img {
   width: -webkit-fill-available;

@@ -20,16 +20,18 @@
 
 <body>
 
-  <nav>
-		<ul>
-			<li><a class="logo" href="index.html"><img src="img/logo.png" alt=""></a></li>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="team.html">Meet the Team</a></li>
-			<li><a href="https://kidsfly-lambda.now.sh/log-in">Login</a></li> <!-- FILL THIS LINK IN WITH THE LINK FROM DEVS -->
-			<li><a href="https://kidsfly-lambda.now.sh/sign-up">Sign Up</a></li> <!-- FILL THIS LINK IN WITH THE LINK FROM DEVS -->
-		</ul>
-	</nav>
+  <header class="header">
+            <a class="logo" href="index.html"><img src="img/logo.png" alt=""></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+            <ul class="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="https://kidsfly-lambda.now.sh/log-in">Login</a></li> <!-- FILL THIS LINK IN WITH THE LINK FROM DEVS -->
+              <li><a href="https://kidsfly-lambda.now.sh/sign-up">Sign Up</a></li> <!-- FILL THIS LINK IN WITH THE LINK FROM DEVS -->
+            </ul>
+        </header>
 
   </nav>
 
@@ -64,9 +66,15 @@
 
   </div><!-- container -->
 
-  <footer class="footer">
-    <p>Copyright Lids Fly 2020</p>
-  </footer>
+  <footer>
+      <nav>
+        <a href="https://kidsfly-lambda.now.sh/log-in/admin">Admin Login</a>
+        <a href="#">Become a "KidsFlyConnection"<br />
+          (Click here to apply)</a>
+      </nav>
+      <br />
+      <h3>©KidsFly USA,Inc. All Rights Reserved.</h3>
+    </footer>
 
 </body>
 </html>

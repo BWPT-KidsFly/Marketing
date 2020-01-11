@@ -18,18 +18,20 @@
 
 <body>
 
-  <nav>
-		<ul>
-			<li><a class="logo" href="index.html"><img src="img/logo.png" alt=""></a></li>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="team.html">Meet the Team</a></li> <!-- FILL THIS LINK IN WITH THE LINK FROM DEVS -->
-			<li><a href="https://kidsfly-lambda.now.sh/login">Login</a></li> <!-- FILL THIS LINK IN WITH THE LINK FROM DEVS -->
-			<li><a href="https://kidsfly-lambda.now.sh/sign-up">Sign Up</a></li> <!-- FILL THIS LINK IN WITH THE LINK FROM DEVS -->
-		</ul>
-	</nav>
+  <header class="header">
+            <a class="logo" href="index.html"><img src="img/logo.png" alt=""></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+            <ul class="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="https://kidsfly-lambda.now.sh/login">Login</a></li> <!-- FILL THIS LINK IN WITH THE LINK FROM DEVS -->
+              <li><a href="https://kidsfly-lambda.now.sh/sign-up">Sign Up</a></li> <!-- FILL THIS LINK IN WITH THE LINK FROM DEVS -->
+            </ul>
+        </header>
 
-  <div class="container-team">
+  <div class="container">
     <ul class="cards">
       <li class="cards__item">
         <div class="card">
@@ -37,7 +39,7 @@
           <div class="card__content">
             <div class="card__title">Aaron - UI/UX</div>
             <p class="card__text">Collaborated with Ashley to establish brand colors and fonts. Once that was established, Ashley and I created our own separate marketing pages for the project.</p>
-            <a href=""><button class="btn btn--block card__btn">GitHub</button></a>
+            <a href="https://github.com/amsheppard2016"><button class="btn btn--block card__btn">GitHub</button></a>
           </div>
         </div>
       </li>
@@ -57,7 +59,7 @@
           <div class="card__content">
             <div class="card__title">Adrian - Front-End Engineer</div>
             <p class="card__text">Collaborated with Raudel,and Tucker to establish React.js code. We also collaborated with Heather and Josh to tie in the backend code to our frontend application.</p>
-            <a href=""><button class="btn btn--block card__btn">GitHub</button></a>
+            <a href="https://github.com/Adrian-Guadalupe"><button class="btn btn--block card__btn">GitHub</button></a>
           </div>
         </div>
       </li>
@@ -67,7 +69,7 @@
           <div class="card__content">
             <div class="card__title">Craig - iOS</div>
             <p class="card__text">Collaborated with Dillon to create the iOS design and the Swift code to make our iOS application. We also collaborated with Heather and Josh to tie in the backend data to our application.</p>
-            <a href=""><button class="btn btn--block card__btn">GitHub</button></a>
+            <a href="https://github.com/craig-a-swanson"><button class="btn btn--block card__btn">GitHub</button></a>
           </div>
         </div>
       </li>
@@ -77,7 +79,7 @@
           <div class="card__content">
             <div class="card__title">Dillon - iOS</div>
             <p class="card__text">Collaborated with Craig to create the iOS design and the Swift code to make our iOS application. We also collaborated with Heather and Josh to tie in the backend data to our application.</p>
-            <a href=""><button class="btn btn--block card__btn">GitHub</button></a>
+            <a href="https://github.com/dillonp23"><button class="btn btn--block card__btn">GitHub</button></a>
           </div>
         </div>
       </li>
@@ -87,7 +89,7 @@
           <div class="card__content">
             <div class="card__title">Heather - Backend Engineer</div>
             <p class="card__text">Worked with Josh to establish backend information for the other developers. Once we created that and got it hosted on Heroku, we were able to collaborate with other developers to help tie in their apps to the backend code.</p>
-            <a href=""><button class="btn btn--block card__btn">GitHub</button></a>
+            <a href="https://github.com/Heather-Ridgill"><button class="btn btn--block card__btn">GitHub</button></a>
           </div>
         </div>
       </li>
@@ -97,7 +99,7 @@
           <div class="card__content">
             <div class="card__title">Josh - Project Manager</div>
             <p class="card__text">Worked with Josh to establish backend information for the other developers. I also communicated with my team to meet deadlines and the MVPs of the project.</p>
-            <a href=""><button class="btn btn--block card__btn">GitHub</button></a>
+            <a href="https://github.com/Joshua-Burleson"><button class="btn btn--block card__btn">GitHub</button></a>
           </div>
         </div>
       </li>
@@ -107,7 +109,7 @@
           <div class="card__content">
             <div class="card__title">Raudel - Front-End Engineer</div>
             <p class="card__text">Collaborated with Adrian and Tucker to establish React.js code. We also collaborated with Heather and Josh to tie in the backend code to our frontend application.</p>
-            <a href=""><button class="btn btn--block card__btn">GitHub</button></a>
+            <a href="https://github.com/raudelf"><button class="btn btn--block card__btn">GitHub</button></a>
           </div>
         </div>
       </li>
@@ -117,16 +119,22 @@
           <div class="card__content">
             <div class="card__title">Tucker - Front-End Engineer</div>
             <p class="card__text">Collaborated with Adrian and Raudel to establish React.js code. We also collaborated with Heather and Josh to tie in the backend code to our frontend application. </p>
-            <a href=""><button class="btn btn--block card__btn">GitHub</button></a>
+            <a href="https://github.com/jtwray"><button class="btn btn--block card__btn">GitHub</button></a>
           </div>
         </div>
       </li>
     </ul>
   </div><!-- container -->
 
-  <footer class="footer">
-    <p>Copyright Kids Fly 2020</p>
-  </footer>
+  <footer>
+      <nav>
+        <a href="https://kidsfly-lambda.now.sh/log-in/admin">Admin Login</a>
+        <a href="#">Become a "KidsFlyConnection"<br />
+          (Click here to apply)</a>
+      </nav>
+      <br />
+      <h3>©KidsFly USA,Inc. All Rights Reserved.</h3>
+    </footer>
 
 
 </body>
